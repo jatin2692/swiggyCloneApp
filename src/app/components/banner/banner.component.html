@@ -1,0 +1,8 @@
+<swiper 
+ *ngIf="bannerImages?.length > 0"
+ class="border-bottom"
+ [config]="config">
+  <ng-template swiperSlide *ngFor="let images of bannerImages">
+    <div [ngStyle]="{'background-image' : 'url(' + images.banners + ')'}"></div>
+  </ng-template>
+</swiper>
